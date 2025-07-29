@@ -1,0 +1,33 @@
+:root {
+  --bg-main: #0a192f;
+  --bg-secondary: #112240;
+  --accent: #64ffda;
+  --text-main: #ccd6f6;
+  --text-secondary: #8892b0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.btn-outline-accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline-accent:hover {
+  background-color: var(--accent);
+  color: #0a192f;
+}
+
+.hero {
+  background: linear-gradient(145deg, #0a192f, #112240);
+  padding-top: 80px;
+}
