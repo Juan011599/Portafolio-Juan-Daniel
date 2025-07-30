@@ -4,13 +4,24 @@
   --accent: #64ffda;
   --text-main: #ccd6f6;
   --text-secondary: #8892b0;
+  --white: #ffffff;
+  --modal-bg: #1c2b3a;
 }
 
 body {
   background-color: var(--bg-main);
   color: var(--text-main);
-  scroll-behavior: smooth;
   font-family: 'Fira Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--white);
 }
 
 .text-accent {
@@ -18,16 +29,83 @@ body {
 }
 
 .btn-outline-accent {
-  border-color: var(--accent);
+  border: 1px solid var(--accent);
   color: var(--accent);
+  transition: 0.3s;
+  background: transparent;
 }
 
 .btn-outline-accent:hover {
   background-color: var(--accent);
-  color: #0a192f;
+  color: var(--bg-main);
 }
 
 .hero {
-  background: linear-gradient(145deg, #0a192f, #112240);
+  background: linear-gradient(145deg, var(--bg-main), var(--bg-secondary));
   padding-top: 80px;
+}
+
+.timeline {
+  border-left: 3px solid var(--accent);
+  padding-left: 2rem;
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-point {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  position: absolute;
+  left: -9px;
+  top: 4px;
+}
+
+.timeline-content {
+  margin-left: 1.5rem;
+}
+
+.timeline-content h5 {
+  color: var(--text-main);
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.modal-content {
+  background-color: var(--modal-bg);
+  color: var(--text-main);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: var(--accent);
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+section,
+.timeline-content,
+.btn,
+nav a {
+  transition: all 0.3s ease-in-out;
 }
