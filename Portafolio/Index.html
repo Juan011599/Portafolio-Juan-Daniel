@@ -3,211 +3,282 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio profesional de Juan Daniel Gonzalez Moreno, desarrollador Full Stack Junior." />
-  <title>Juan Daniel Gonzalez | Full Stack Developer</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="imagenes/png" href="" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <meta name="description" content="Portafolio de Juan Daniel Gonzalez Moreno - Desarrollador Full Stack Junior colombiano" />
+  <title>Desarrollador Fullstack Junior | Portafolio</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a2b86f8c46.js" crossorigin="anonymous"></script>
+  <!--  iconos FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<body data-bs-theme="dark">
+
+<body class="dark-mode">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">JuanDev()</a>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Desarrollador Fullstack Junior</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Botón de cambio de tema -->
+      <button id="themeToggle" class="btn btn-sm btn-outline-light ms-3">
+        <i class="fas fa-moon"></i>
+      </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-outline-light btn-sm ms-2">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!--  Seccion Hero -->
-  <header id="inicio" class="hero vh-100 d-flex flex-column justify-content-center align-items-center text-center">
-    <h1 class="display-4 fw-bold">Juan Daniel Gonzalez Moreno</h1>
-    <p class="lead">Desarrollador Full Stack Junior</p>
-    <p class="frase fst-italic">"Aprender es el puente entre lo que somos y lo que podemos ser."</p>
-    <a href="#contacto" class="btn btn-outline-accent mt-3">Contáctame</a>
-  </header>
-
-  <!-- Proximas secciones (placeholder) -->
-  <section id="sobre-mi" class="container py-5">
-    <h2 class="text-accent">Sobre mí</h2>
-    <div class="row align-items-center">
-  <div class="col-md-4 text-center mb-4 mb-md-0">
-    <img src="assets/images/JDGM.jpeg" alt="Foto de Juan Daniel" class="img-fluid rounded-circle shadow" width="250">
-  </div>
-  <div class="col-md-8">
-    <p>Soy <strong>Juan Daniel Gonzalez Moreno</strong>, Ingeniero Industrial en transición al desarrollo Full Stack. Actualmente me estoy formando con <strong>Generation Colombia</strong>, enfocado en crear soluciones tecnológicas de impacto.</p>
-    <p>Me apasiona el <strong>backend con Java</strong>, construir software útil y aprender constantemente. Valoro el trabajo en equipo, el pensamiento estructurado y el diseño con propósito.</p>
-    <p>Estoy disponible para colaborar y aportar desde <strong>septiembre de 2025</strong>.</p>
-  </div>
-</div>
-<!-- Sección ¿Por qué contratarme? -->
-<section id="porque-contratarme" class="py-5 bg-dark text-light">
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="overlay"></div>
+    <div class="container hero-content text-center">
+      <h1 class="hero-name">Juan Daniel Gonzalez</h1>
+      <h2 class="hero-role">Desarrollador Full Stack Junior</h2>
+      <p class="hero-phrase">“El Aprendizaje es el puente entre lo que somos y lo que podemos llegar a ser.”</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Contáctame</a>
+    </div>
+  </section>
+<!-- Sobre Mí -->
+<section id="about" class="about-section py-5">
   <div class="container">
-    <h2 class="text-center text-accent mb-4">¿Por qué contratarme?</h2>
-    <div class="text-center">
-      <p class="lead">
-        No solo soy un Desarrollador Full Stack con enfoque en Backend.
-        Soy una persona que le apasiona crear soluciones útiles y sostenibles, combinando lógica, curiosidad y compromiso.
-      </p>
-      <button type="button" class="btn btn-outline-accent mt-3" data-bs-toggle="modal" data-bs-target="#modalContratarme">
-        Ver más y descargar CV
-      </button>
+    <div class="row align-items-center">
+      
+      <!-- Imagen de perfil -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="assets/img/perfil.jpeg" alt="Foto de Juan Daniel Gonzalez" class="img-fluid rounded-circle about-img">
+      </div>
+
+      <!-- Texto sobre mí -->
+      <div class="col-md-8">
+        <h2 class="section-title">Sobre Mí</h2>
+        <p class="about-text">
+          Soy Juan Daniel Gonzalez Moreno, desarrollador full stack junior colombiano con formación en Ingeniería Industrial.
+          Me apasiona construir soluciones web eficientes, limpias y humanas, siempre buscando crecer y aprender algo nuevo cada día.
+        </p>
+
+        <h3 class="tech-title mt-4">Tecnologías principales</h3>
+        <ul class="tech-list d-flex flex-wrap gap-3 mt-3">
+          <li class="tech-item">Java</li>
+          <li class="tech-item">Spring Boot</li>
+          <li class="tech-item">JavaScript</li>
+          <li class="tech-item">MySQL</li>
+          <li class="tech-item">HTML</li>
+          <li class="tech-item">CSS</li>
+          <li class="tech-item">Bootstrap</li>
+          <li class="tech-item">Git</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills -->
+<section id="skills" class="skills-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Skills</h2>
+
+    <div class="row">
+      <!-- Backend -->
+      <div class="col-md-4 mb-4">
+        <div class="skill-card text-center p-4">
+          <h3 class="skill-title">Backend</h3>
+          <div class="skill-icons d-flex flex-wrap justify-content-center gap-4 mt-3">
+            <i class="fab fa-java fa-2x skill-icon" title="Java"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="devicon-icon">
+            <i class="fas fa-database fa-2x skill-icon" title="MySQL"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="col-md-4 mb-4">
+        <div class="skill-card text-center p-4">
+          <h3 class="skill-title">Frontend</h3>
+          <div class="skill-icons d-flex flex-wrap justify-content-center gap-4 mt-3">
+            <i class="fab fa-html5 fa-2x skill-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt fa-2x skill-icon" title="CSS3"></i>
+            <i class="fab fa-js-square fa-2x skill-icon" title="JavaScript"></i>
+            <i class="fab fa-bootstrap fa-2x skill-icon" title="Bootstrap"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Herramientas -->
+      <div class="col-md-4 mb-4">
+        <div class="skill-card text-center p-4">
+          <h3 class="skill-title">Herramientas</h3>
+          <div class="skill-icons d-flex flex-wrap justify-content-center gap-4 mt-3">
+            <i class="fab fa-git-alt fa-2x skill-icon" title="Git"></i>
+            <i class="fab fa-github fa-2x skill-icon" title="GitHub"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="devicon-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="devicon-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="experience" class="experience-section section">
+  <div class="container">
+    <h2 class="section-title">Experiencia</h2>
+    
+    <div class="experience-item">
+      <h3 class="role">Desarrollador Full Stack Junior</h3>
+      <p class="company">Generation Colombia — Medellín, Colombia</p>
+      <p class="date">junio 2025 - septiembre 2025</p>
+      <ul class="responsibilities">
+        <li>Desarrollo de aplicaciones web con Java, Spring Boot, MySQL y JavaScript.</li>
+        <li>Trabajo en equipo ágil con metodologías Scrum.</li>
+        <li>Diseño de funcionalidades de backend y conexión con frontend.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3 class="role">Asesor Profesional - Modelo Integrado de Planeación y Gestión</h3>
+      <p class="company">Conlógica S.A.S / Municipio de Itagüí, COL</p>
+      <p class="date">Julio de 2023 - Diciembre de 2023</p>
+      <ul class="responsibilities">
+        <li>Participé en el fortalecimiento del modelo de gestión estratégica en Itagüí.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3 class="role">Asesor Profesional  del Plan Estadístico Departamental</h3>
+      <p class="company">Universidad de Antioquia, Medellín, COL</p>
+      <p class="date">Septiembre de 2022 - Diciembre de 2022</p>
+      <ul class="responsibilities">
+        <li>Participé en inspecciones técnicas a distintas dependencias para recopilar información estadística con el fin de elaborar diagnósticos técnicos.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- Modal en modo oscuro -->
-<div class="modal fade" id="modalContratarme" tabindex="-1" aria-labelledby="modalContratarmeLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content bg-dark text-light border border-light">
-      <div class="modal-header border-secondary">
-        <h5 class="modal-title" id="modalContratarmeLabel">¿Por qué contratarme?</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <p>
-          Soy Ingeniero Industrial y actualmente me estoy formando como Desarrollador Full Stack con enfoque en Backend Java.
-          Tomé la decisión de cambiar de rumbo porque descubrí en la programación una forma de combinar mi pensamiento lógico
-          con la posibilidad de crear soluciones reales y útiles para las personas.
-        </p>
-        <p>
-          Me caracterizo por ser comprometido, curioso y autodidacta. Disfruto aprender cosas nuevas, trabajar en equipo y resolver
-          problemas de forma ordenada y con sentido. No me conformo con que algo funcione: quiero entender cómo y por qué funciona.
-        </p>
-        <p>
-          Busco una oportunidad para comenzar mi camino profesional en el mundo del desarrollo. Sé que aún estoy empezando, pero también
-          sé que tengo la disciplina, la motivación y la capacidad de crecer rápido. Si me das la oportunidad, me comprometo a aportar
-          valor desde el primer día.
-        </p>
-      </div>
-      <div class="modal-footer border-secondary">
-        <a href="assets/EE-CV - Juan Gonzalez Resume_vF.pdf" download class="btn btn-outline-accent">
-          📄 Descargar CV
-        </a>
-      </div>
-    </div>
   </div>
-</div>
+</section>
 
+<!-- Proyectos -->
+<section id="projects" class="projects-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Proyectos</h2>
 
-  </section>
-
-  <section id="skills" class="container py-5">
-    <h2 class="text-accent">Habilidades</h2>
     <div class="row">
-  <!-- Frontend -->
-  <div class="col-md-3">
-    <h4 class="text-accent">Frontend</h4>
-    <ul class="list-unstyled">
-      <li><i class="bi bi-code-slash"></i> HTML5</li>
-      <li><i class="bi bi-code-slash"></i> CSS3</li>
-      <li><i class="bi bi-code-slash"></i> Bootstrap 5</li>
-      <li><i class="bi bi-code-slash"></i> JavaScript (Vanilla)</li>
-    </ul>
-  </div>
+      <!-- Proyecto 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="project-card">
+          <img src="assets/img/la-cafetalera.jpeg" class="img-fluid project-image" alt="La Cafetalera">
+          <div class="project-content p-4">
+            <h3 class="project-title">La Cafetalera</h3>
+            <p class="project-description">E-commerce de café artesanal colombiano. Incluye catálogo, detalle de producto, login y dashboard administrativo.</p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+            <a href="https://github.com/Juan011599" target="_blank" class="btn btn-outline-light btn-sm me-2">GitHub</a>
+            <a href="#" class="btn btn-outline-light btn-sm disabled">Demo no disponible</a>
+          </div>
+        </div>
+      </div>
 
-  <!-- Backend -->
-  <div class="col-md-3">
-    <h4 class="text-accent">Backend</h4>
-    <ul class="list-unstyled">
-      <li><i class="bi bi-database"></i> Java</li>
-      <li><i class="bi bi-database"></i> MySQL</li>
-      <li><i class="bi bi-box"></i> Spring Boot</li>
-    </ul>
-  </div>
-
-  <!-- Herramientas -->
-  <div class="col-md-3">
-    <h4 class="text-accent">Herramientas</h4>
-    <ul class="list-unstyled">
-      <li><i class="bi bi-git"></i> Git & GitHub</li>
-      <li><i class="bi bi-pencil-square"></i> VS Code</li>
-      <li><i class="bi bi-easel"></i> Figma</li>
-    </ul>
-  </div>
-
-  <!-- Idiomas -->
-  <div class="col-md-3">
-    <h4 class="text-accent">Idiomas</h4>
-    <ul class="list-unstyled">
-      <li><i class="bi bi-chat-left-text"></i> Español (Nativo)</li>
-      <li><i class="bi bi-chat-left-text"></i> Francés (B1)</li>
-      <li><i class="bi bi-chat-left-text"></i> Inglés (A1)</li>
-    </ul>
-  </div>
-</div>
-  </section>
-
-  <section id="proyectos" class="container py-5">
-    <h2 class="text-accent">Proyectos</h2>
-    <div class="row g-4">
-  <!-- Proyecto 1  falta agregar imagenes-->
-  <div class="col-md-6">
-    <div class="card bg-secondary h-100 shadow-sm">
-      <img src="assets/images/OIP.webp" class="card-img-top" alt="Proyecto eCommerce de café">
-      <div class="card-body">
-        <h5 class="card-title text-accent">E-commerce Café Colombiano</h5>
-        <p class="card-text">
-          Plataforma web para conectar consumidores con caficultores locales. Enfocado en sostenibilidad, comercio justo e identidad cultural.
-        </p>
-        <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Java, Spring Boot, MySQL</p>
-        <div class="d-flex gap-2">
-          <a href="#" class="btn btn-outline-accent btn-sm" target="_blank">Ver demo</a>
-          <a href="https://github.com/Juan011599/Portafolio-Juan-Daniel.git" class="btn btn-outline-light btn-sm" target="_blank">Ver código</a>
-          <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto1">¿Cómo lo hice?</button>
+      <!-- Proyecto 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="project-card">
+          <img src="assets/img/portafolio.webp" class="img-fluid project-image" alt="Portafolio">
+          <div class="project-content p-4">
+            <h3 class="project-title">Mi Portafolio Web</h3>
+            <p class="project-description">Sitio personal para mostrar mis proyectos, habilidades y contacto. Diseño responsive, con modo oscuro y opción de idioma.</p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap, JavaScript</p>
+            <a href="https://github.com/Juan011599" target="_blank" class="btn btn-outline-light btn-sm me-2">GitHub</a>
+            <a href="#" class="btn btn-outline-light btn-sm disabled">Demo no disponible</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Modal Proyecto 1 -->
-  <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-dark text-light">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalProyecto1Label">¿Cómo lo hice?</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>Diseño del MVP en Figma y definición de roles con metodología Scrum.</li>
-            <li>Implementación de frontend en HTML, CSS y JavaScript.</li>
-            <li>Backend con Java, Spring Boot y base de datos MySQL.</li>
-            <li>Enlace entre catálogo, carrito de compras y perfiles de caficultores.</li>
-            <li>Gestión de usuarios y dashboard de administración (en progreso).</li>
-          </ul>
-        </div>
+  <!-- Contenido temporal -->
+  <main class="container text-center mt-5">
+    <h1>Secciones en construcción</h1>
+    <p>Pronto verás más contenido aquí 🚧</p>
+  </main>
+<!-- Contacto -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Contacto</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="contact-form" action="https://formspree.io/f/mwpqqeld" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Enviar mensaje
+              <span id="loadingSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div id="successAlert" class="alert alert-success mt-3 d-none" role="alert">
+            ¡Mensaje enviado con éxito! Pronto te contactaré.
+          </div>
+        </form>
       </div>
     </div>
   </div>
-</div>
-  </section>
+</section>
+<!-- Footer -->
+<footer class="footer py-4 text-center">
+  <div class="container">
+    <div class="mb-3">
+      <a href="https://github.com/Juan011599" target="_blank" class="social-icon me-3"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/juan-daniel-gonzalez-moreno-24b501350/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p class="mb-1">&copy; 2025 Juan Daniel Gonzalez Moreno. Todos los derechos reservados.</p>
+    <p class="footer-links">
+      <a href="#home" class="me-2">Inicio</a>|
+      <a href="#about" class="mx-2">Sobre mí</a>|
+      <a href="#projects" class="mx-2">Proyectos</a>|
+      <a href="#contact" class="ms-2">Contacto</a>
+    </p>
+  </div>
+</footer>
 
-  <section id="contacto" class="container py-5">
-    <h2 class="text-accent">Contacto</h2>
-    <!-- Aqui ira el formulario -->
-  </section>
-
-  <footer class="bg-dark text-center py-4">
-    <p class="mb-0 text-secondary">&copy; 2025 Juan Daniel Gonzalez • Medellín, Colombia</p>
-  </footer>
-
+  <!-- Bootstrap JS + scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/toggleTheme.js"></script>
+  <script src="js/smoothScroll.js"></script>
+  <script src="js/spotlightEffect.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scrollreveal.js"></script>
+
+
 </body>
 </html>
