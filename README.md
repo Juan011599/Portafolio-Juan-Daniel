@@ -1,4 +1,4 @@
-# Portafolio Juan Daniel González Moreno
+# Portafolio Juan Daniel Gonzalez Moreno
 
 Este proyecto es mi portafolio web personal como desarrollador Full Stack en formación. Fue construido desde cero con HTML, CSS, JavaScript y Bootstrap, con el objetivo de mostrar mi perfil profesional, mis proyectos, mis habilidades y facilitar el contacto con reclutadores o personas interesadas en colaborar conmigo.
 
