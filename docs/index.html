@@ -26,14 +26,11 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Desarrollador Fullstack Junior</a>
+      <a class="navbar-brand" href="#">Desarrollador Backend Junior</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Botón de cambio de tema -->
-      <button id="themeToggle" class="btn btn-sm btn-outline-light ms-3">
-        <i class="fas fa-moon"></i>
-      </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
@@ -41,9 +38,7 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
           <li class="nav-item">
-            <button id="themeToggle" class="btn btn-outline-light btn-sm ms-2">
-              <i class="fas fa-moon"></i>
-            </button>
+
           </li>
         </ul>
       </div>
@@ -55,7 +50,7 @@
     <div class="overlay"></div>
     <div class="container hero-content text-center">
       <h1 class="hero-name">Juan Daniel Gonzalez</h1>
-      <h2 class="hero-role">Desarrollador Full Stack Junior</h2>
+      <h2 class="hero-role">Desarrollador Backend Junior</h2>
       <p class="hero-phrase">“El Aprendizaje es el puente entre lo que somos y lo que podemos llegar a ser.”</p>
       <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Contáctame</a>
     </div>
@@ -67,14 +62,14 @@
       
       <!-- Imagen de perfil -->
       <div class="col-md-4 text-center mb-4 mb-md-0">
-        <img src="assets/img/perfil.jpeg" alt="Foto de Juan Daniel Gonzalez" class="img-fluid rounded-circle about-img">
+        <img src="assets/img/IMG_9782-removebg-preview.png" alt="Foto de Juan Daniel Gonzalez" class="img-fluid rounded-circle about-img">
       </div>
 
       <!-- Texto sobre mí -->
       <div class="col-md-8">
         <h2 class="section-title">Sobre Mí</h2>
         <p class="about-text">
-          Soy Juan Daniel Gonzalez Moreno, desarrollador full stack junior colombiano con formación en Ingeniería Industrial.
+          Soy Juan Daniel Gonzalez Moreno, desarrollador Backend junior colombiano con formación en Ingeniería Industrial.
           Me apasiona construir soluciones web eficientes, limpias y humanas, siempre buscando crecer y aprender algo nuevo cada día.
         </p>
 
@@ -82,11 +77,9 @@
         <ul class="tech-list d-flex flex-wrap gap-3 mt-3">
           <li class="tech-item">Java</li>
           <li class="tech-item">Spring Boot</li>
-          <li class="tech-item">JavaScript</li>
+          <li class="tech-item">SQL</li>
           <li class="tech-item">MySQL</li>
-          <li class="tech-item">HTML</li>
-          <li class="tech-item">CSS</li>
-          <li class="tech-item">Bootstrap</li>
+          <li class="tech-item">GitHub</li>
           <li class="tech-item">Git</li>
         </ul>
       </div>
@@ -144,7 +137,7 @@
     <h2 class="section-title">Experiencia</h2>
     
     <div class="experience-item">
-      <h3 class="role">Desarrollador Full Stack Junior</h3>
+      <h3 class="role">Desarrollador Backend Junior</h3>
       <p class="company">Generation Colombia — Medellín, Colombia</p>
       <p class="date">junio 2025 - septiembre 2025</p>
       <ul class="responsibilities">
@@ -164,18 +157,21 @@
     </div>
 
     <div class="experience-item">
-      <h3 class="role">Asesor Profesional  del Plan Estadístico Departamental</h3>
+      <h3 class="role">Asesor Profesional del Plan Estadístico Departamental</h3>
       <p class="company">Universidad de Antioquia, Medellín, COL</p>
       <p class="date">Septiembre de 2022 - Diciembre de 2022</p>
       <ul class="responsibilities">
         <li>Participé en inspecciones técnicas a distintas dependencias para recopilar información estadística con el fin de elaborar diagnósticos técnicos.</li>
       </ul>
     </div>
+
+    <!-- Botón de descarga CV -->
+    <div class="cv-download">
+      <a href="assets/CV JUAN DANIEL GONZALEZ MORENO.pdf" download class="btn-cv">📄 Descargar CV</a>
+    </div>
   </div>
 </section>
 
-  </div>
-</section>
 
 <!-- Proyectos -->
 <section id="projects" class="projects-section py-5">
@@ -190,29 +186,30 @@
           <div class="project-content p-4">
             <h3 class="project-title">La Cafetalera</h3>
             <p class="project-description">E-commerce de café artesanal colombiano. Incluye catálogo, detalle de producto, login y dashboard administrativo.</p>
-            <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Bootstrap, Java, Spring Boot y SQL</p>
             <a href="https://github.com/Juan011599" target="_blank" class="btn btn-outline-light btn-sm me-2">GitHub</a>
             <a href="#" class="btn btn-outline-light btn-sm disabled">Demo no disponible</a>
           </div>
         </div>
       </div>
 
-      <!-- Proyecto 2 -->
+      <!-- Proyecto 2 --> 
       <div class="col-md-6 mb-4">
         <div class="project-card">
           <img src="assets/img/portafolio.webp" class="img-fluid project-image" alt="Portafolio">
           <div class="project-content p-4">
             <h3 class="project-title">Mi Portafolio Web</h3>
-            <p class="project-description">Sitio personal para mostrar mis proyectos, habilidades y contacto. Diseño responsive, con modo oscuro y opción de idioma.</p>
+            <p class="project-description">Sitio personal para mostrar mis proyectos, habilidades y contacto. Diseño responsive.</p>
             <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap, JavaScript</p>
             <a href="https://github.com/Juan011599" target="_blank" class="btn btn-outline-light btn-sm me-2">GitHub</a>
-            <a href="#" class="btn btn-outline-light btn-sm disabled">Demo no disponible</a>
+            <a href="https://juan011599.github.io/Portafolio-Juan-Daniel/" target="_blank" class="btn btn-outline-success btn-sm">Demo</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      </div>
+      </div>
+      </section>
+
 
   <!-- Contenido temporal -->
   <main class="container text-center mt-5">

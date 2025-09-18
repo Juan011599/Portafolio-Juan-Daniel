@@ -90,21 +90,11 @@ body.dark-mode {
   z-index: 1;
   transition: background-position 0.1s ease;
 }
+
 /* Sobre mí */
 .about-section {
   background-color: #0a192f;
   color: #ccd6f6;
-}
-
-.about-img {
-  max-width: 250px;
-  border: 4px solid #64ffda;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.about-img:hover {
-  transform: scale(1.05);
 }
 
 .section-title {
@@ -132,7 +122,7 @@ body.dark-mode {
 }
 
 .tech-item {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: rgba(95, 239, 205, 0.289);
   color: #64ffda;
   border: 1px solid #64ffda;
   padding: 0.4rem 0.8rem;
@@ -145,55 +135,76 @@ body.dark-mode {
   background-color: #64ffda;
   color: #0a192f;
 }
+
 /* Skills */
 .skills-section {
   background-color: #112240;
   color: #ccd6f6;
+  padding: 6rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3.5rem;
+  justify-items: center;
+  align-items: start;
 }
 
 .skill-card {
   background-color: #0a192f;
   border: 1px solid #64ffda;
   border-radius: 1rem;
+  padding: 2.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 240px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(100, 255, 218, 0.2);
+  box-shadow: 0 8px 10px rgba(100, 255, 218, 0.2);
 }
 
 .skill-title {
   font-family: 'Playfair Display', serif;
   color: #64ffda;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .skill-icons {
-  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.skill-icon {
-  color: #64ffda;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.skill-icon:hover {
-  transform: scale(1.2);
-  color: #ffffff;
-}
-
+/* Íconos unificados */
+.skill-icon,
 .devicon-icon {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) saturate(100%) invert(68%) sepia(12%) saturate(744%) hue-rotate(113deg) brightness(103%) contrast(92%);
-  transition: transform 0.3s ease;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  color: #64ffda;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
 }
 
+.skill-icon:hover,
 .devicon-icon:hover {
-  transform: scale(1.2);
-  filter: brightness(1.5);
+  transform: scale(1.25);
+  filter: brightness(1.4);
 }
+
 /* Projects */
 .projects-section {
   background-color: #0a192f;
@@ -233,6 +244,7 @@ body.dark-mode {
   font-size: 0.95rem;
   margin-bottom: 0.8rem;
 }
+
 /* Contact Section */
 .contact-section {
   background-color: #0a192f;
@@ -264,6 +276,7 @@ body.dark-mode {
 .contact-section .btn-primary:hover {
   background-color: #52d1ba;
 }
+
 /* Footer */
 .footer {
   background-color: #0a192f;
@@ -293,6 +306,7 @@ body.dark-mode {
 .footer-links a {
   margin: 0 5px;
 }
+
 /* Temas */
 :root {
   --bg-color: #0a192f;
@@ -322,40 +336,8 @@ a {
   border-color: var(--link-color);
   color: var(--link-color);
 }
-.experience-section {
-  padding: 80px 0;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-}
 
-.experience-item {
-  margin-bottom: 40px;
-}
-
-.experience-item h3 {
-  color: var(--primary);
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-.experience-item .company {
-  font-weight: bold;
-  color: var(--text-secondary);
-}
-
-.experience-item .date {
-  font-style: italic;
-  color: var(--text-secondary);
-  margin-bottom: 10px;
-}
-
-.experience-item ul {
-  padding-left: 20px;
-}
-
-.experience-item li {
-  margin-bottom: 5px;
-}
+/* Experience Section */
 .experience-section {
   padding: 80px 0;
   background-color: var(--light);
@@ -383,7 +365,7 @@ a {
 
 .experience-item .date {
   font-style: italic;
-  color: #666;
+  color: #bebebe;
   margin-bottom: 10px;
 }
 
@@ -395,3 +377,33 @@ a {
   margin-bottom: 6px;
   line-height: 1.6;
 }
+
+/* Botón de Descargar CV */
+.cv-download {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-cv {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cv {
+  background: #64ffda;
+  color: #0a192f;
+  border: 2px solid #64ffda;
+}
+
+.btn-cv:hover {
+  background: #0a192f;
+  color: #64ffda;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(100, 255, 218, 0.3);
+}
+
